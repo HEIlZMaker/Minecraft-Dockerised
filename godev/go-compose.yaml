@@ -1,0 +1,5 @@
+service:
+  go:
+    image: godev
+    volumes:
+      - /home/heilz/dev/docker/distroless-minecraft:/code/

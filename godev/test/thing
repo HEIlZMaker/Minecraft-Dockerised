@@ -1,0 +1,20 @@
+package thing
+
+import (
+    "log"
+    "os/exec"
+)
+
+func thing() {
+   
+    cmd := exec.Command("java", "-jar", "path/to/minecraft.jar")
+
+    cmd.Stdout = nil 
+    cmd.Stderr = nil
+
+    
+    err := cmd.Run()
+    if err != nil {
+        log.Fatalf("Failed to run Minecraft jar: %v", err)
+    }
+}
