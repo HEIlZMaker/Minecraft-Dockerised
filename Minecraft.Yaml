@@ -1,0 +1,7 @@
+services:
+  Minecraft:
+    image: dmb:1
+    volumes:
+      ./data/:/mc/
+  ports:
+  - 25565:25565
