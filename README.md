@@ -10,6 +10,7 @@ It is also distroless (for fun, security and size)
 Currently the env variables currently supported are 
 Xmx="4G"
 jarName="server.jar"
+
 the values can be anything (I should really change the naming scheme for the jar variable wtf is that, but oh shit if somene actually uses this and i push a commit with something simpler like jar that will break for that person. Oh well I guess this is how we get tech debt)
 
 regardless if you want to add anything it's pretty easy to add some code to the main.go file just use my code as a template.
